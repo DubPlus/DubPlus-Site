@@ -62,6 +62,6 @@ export class DownloadService {
   }
 
   installUserscript(): void {
-      window.location.href = 'https://gist.github.com/coryshaw1/c1c2e7aa00a0039d1057b8e2cda85e7b/raw/d52e08f0512a18d71f003783964bf405aebacd5c/dubplus.user.js';
+      window.location.href = 'https://gist.github.com/coryshaw1/c1c2e7aa00a0039d1057b8e2cda85e7b/raw/8b4a669a507651d8afb314c1900c4df1ff6b364f/dubplus.user.js';
   }
 }
