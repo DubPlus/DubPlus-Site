@@ -5,16 +5,16 @@ export class TeamMember {
     Description: string;
     Github: string;
     GithubId: string;
-    Dubtrack: string;
+    QueUp: string;
     Twitter: string;
 
-    constructor(name?: string, title?: string, description?: string, github?: string, githubId?: string, dubtrack?: string, twitter?: string) {
+    constructor(name?: string, title?: string, description?: string, github?: string, githubId?: string, queup?: string, twitter?: string) {
         this.Name = name;
         this.Title = title;
         this.Description = description;
         this.Github = github;
         this.GithubId = githubId;
-        this.Dubtrack = dubtrack;
+        this.QueUp = queup;
         this.Twitter = twitter;
     }
 }
