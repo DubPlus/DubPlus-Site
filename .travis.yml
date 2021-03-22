@@ -16,8 +16,13 @@ script:
   - npm run build
   - npm run copy:cname
 
-after_success:
-  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then ng deploy --repo=https://$GH_TOKEN@github.com/DubPlus/DubPlus-Site.git --name=coryshaw1 --email=cory.shaw.dev@gmail.com; fi
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  local_dir: dist/DubPlus-Site
+  on:
+    branch: master
 
 notifications:
   email:
