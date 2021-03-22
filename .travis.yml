@@ -20,7 +20,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN
-  local_dir: dist/DubPlus-Site
+  local_dir: dist
   on:
     branch: master
 
