@@ -16,7 +16,7 @@ export class TeamMemberComponent implements OnInit {
   githubProfileSrc: SafeResourceUrl;
   githubAvatarSrc: SafeResourceUrl;
   twitterIframeSrc: SafeResourceUrl;
-  dubtrackProfileSrc: SafeResourceUrl;
+  queupProfileSrc: SafeResourceUrl;
 
   constructor(private _sanitizer: DomSanitizer) {}
 
@@ -25,7 +25,7 @@ export class TeamMemberComponent implements OnInit {
     this.githubProfileSrc = this._sanitizer.bypassSecurityTrustResourceUrl(`https://github.com/${this.member.Github}`);
     this.githubAvatarSrc = this._sanitizer.bypassSecurityTrustResourceUrl(`https://avatars2.githubusercontent.com/u/${this.member.GithubId}`);
     this.twitterIframeSrc = this._sanitizer.bypassSecurityTrustResourceUrl(`https://platform.twitter.com/widgets/follow_button.a0ec3119d8db2bc5422f2144c89ad7a9.en.html#dnt=false&id=twitter-widget-2&lang=en&screen_name=${this.member.Twitter}&show_count=false&show_screen_name=true&size=m&time=${(new Date().getTime())}`);
-    this.dubtrackProfileSrc = this._sanitizer.bypassSecurityTrustResourceUrl(`https://dubtrack.fm/${this.member.Dubtrack}`);
+    this.queupProfileSrc = this._sanitizer.bypassSecurityTrustResourceUrl(`https://queup.net/user/${this.member.QueUp}`);
   }
 
 }
