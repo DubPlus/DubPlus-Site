@@ -17,7 +17,7 @@ script:
   - npm run copy:cname
 
 after_success:
-  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then ngh --repo=https://$GH_TOKEN@github.com/DubPlus/DubPlus-Site.git --name=coryshaw1 --email=cory.shaw.dev@gmail.com; fi
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then ng deploy --repo=https://$GH_TOKEN@github.com/DubPlus/DubPlus-Site.git --name=coryshaw1 --email=cory.shaw.dev@gmail.com; fi
 
 notifications:
   email:
