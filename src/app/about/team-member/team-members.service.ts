@@ -23,7 +23,7 @@ export class TeamMembersService {
         "FranciscoG",
         "557684",
         "ciscog",
-        "FciscoG"
+        ""
       )
     ]
   }
