@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
-import { MarkdownModule } from 'angular2-markdown';
+import { NgxMdModule } from 'ngx-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -40,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    MarkdownModule,
+    NgxMdModule,
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     BrowserAnimationsModule
   ],
