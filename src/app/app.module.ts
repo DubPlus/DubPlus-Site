@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 import { MarkdownModule } from 'angular2-markdown';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
 import { FeaturesService } from './features/features.service';
@@ -32,7 +32,7 @@ import { ChangelogComponent } from './changelog/changelog.component';
     HeaderComponent,
     HomeComponent,
     TeamMemberComponent,
-    ChangelogComponent
+    ChangelogComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +40,8 @@ import { ChangelogComponent } from './changelog/changelog.component';
     HttpModule,
     AppRoutingModule,
     MarkdownModule,
-    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
+    BrowserAnimationsModule
   ],
   providers: [
     FeaturesService,
