@@ -23,8 +23,7 @@
         "../node_modules/normalize.css/normalize.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/font-awesome/css/font-awesome.css",
-        "../node_modules/prismjs/themes/prism.css",
-        "../node_modules/fuel-ui/bundles/fuel-ui.css"
+        "../node_modules/prismjs/themes/prism.css"
       ],
       "scripts": [
       ],

@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FuelUiModule } from 'fuel-ui';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 import { MarkdownModule } from 'angular2-markdown';
 
@@ -40,7 +39,6 @@ import { ChangelogComponent } from './changelog/changelog.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    FuelUiModule,
     MarkdownModule,
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
