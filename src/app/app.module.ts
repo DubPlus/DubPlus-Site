@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { TeamMemberComponent } from './about/team-member/team-member.component';
 import { BrowserDetectionService } from './utilities/browser-detection.service';
 import { ChangelogComponent } from './changelog/changelog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { ChangelogComponent } from './changelog/changelog.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     MarkdownModule,
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
