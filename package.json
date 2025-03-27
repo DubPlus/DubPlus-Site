@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build": "ng build --prod --base-href \"https://dub.plus/\"",
-    "copy:cname": "cp ./CNAME ./docs/CNAME"
+    "copy:cname": "cp ./CNAME ./dist/CNAME"
   },
   "private": true,
   "dependencies": {
