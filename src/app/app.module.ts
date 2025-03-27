@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
-import { NgxMdModule } from 'ngx-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
@@ -20,6 +19,7 @@ import { TeamMemberComponent } from './about/team-member/team-member.component';
 import { BrowserDetectionService } from './utilities/browser-detection.service';
 import { ChangelogComponent } from './changelog/changelog.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'angular2-markdown';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    NgxMdModule,
+    MarkdownModule,
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
     BrowserAnimationsModule
   ],

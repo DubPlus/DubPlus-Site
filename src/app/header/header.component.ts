@@ -6,7 +6,7 @@ import {
   transition,
   animate,
   keyframes,
-} from "@angular/core";
+} from "@angular/animations";
 import { DownloadService } from "../download/download.service";
 const duration = 350;
 
