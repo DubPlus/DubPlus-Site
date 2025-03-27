@@ -41,7 +41,9 @@ export class FeaturesService {
     features.push(new Feature('Grab Response', 'Automatically send a chat message when you grab a song', 'NEW!' ));
     features.push(new Feature('Collapsible Images', 'Collapse images in chat', 'NEW!' ));
 
-
+    features.sort((a, b) => {
+      return a.Name.localeCompare(b.Name);
+    })
     return features;
   }
 }

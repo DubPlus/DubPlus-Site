@@ -1,12 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FuelUiModule } from 'fuel-ui';
 import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
-import { MarkdownModule } from 'angular2-markdown';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FeaturesComponent } from './features/features.component';
 import { FeaturesService } from './features/features.service';
@@ -21,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { TeamMemberComponent } from './about/team-member/team-member.component';
 import { BrowserDetectionService } from './utilities/browser-detection.service';
 import { ChangelogComponent } from './changelog/changelog.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'angular2-markdown';
 
 @NgModule({
   declarations: [
@@ -33,16 +32,16 @@ import { ChangelogComponent } from './changelog/changelog.component';
     HeaderComponent,
     HomeComponent,
     TeamMemberComponent,
-    ChangelogComponent
+    ChangelogComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
-    FuelUiModule,
     MarkdownModule,
-    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
+    BrowserAnimationsModule
   ],
   providers: [
     FeaturesService,
